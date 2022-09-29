@@ -1,0 +1,13 @@
+name: MapApp
+title: MapApp
+username:
+account: mammarstpc
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7158791
+bundleId: 6351430
+url: https://mammarstpc.shinyapps.io/MapApp/
+when: 1664454840.83368
+lastSyncTime: 1664454840.83369
+asMultiple: FALSE
+asStatic: FALSE
