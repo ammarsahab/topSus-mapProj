@@ -25,9 +25,9 @@ ui <- dashboardPage(skin = "red",
                                 tags$script('
                                 $(document).ready(function () {
                                                 function getLocation(callback){
-                var options = {
-                  timeout: 5000,
-                };
+                                var options = {
+                                  timeout: 5000,
+                                };
 
                                 
                                 navigator.geolocation.getCurrentPosition(onSuccess, onError);
@@ -83,9 +83,20 @@ ui <- dashboardPage(skin = "red",
                                 sidebarLayout(
                                   sidebarPanel(leafletOutput("drmap")),
                                   mainPanel(
-                                    textOutput("coordinate"),
+                                    tags$head(tags$style("#coordinate{color: black;
+                                      font-size: 18px;
+                                      font-style: italic;}"),
+                                    ),
+                                    tags$head(tags$style("#nama{color: black;
+                                    font-size: 36px;
+                                    font-style: bold;}")
+                                    ),
+                                    tags$head(tags$style("#lokasi{color: black;
+                                    font-size: 24px;}")
+                                    ),
                                     textOutput("nama"),
-                                    textOutput("lokasi")
+                                    textOutput("lokasi"),
+                                    textOutput("coordinate"),
                                   )
                                 )      
                         ),
@@ -144,7 +155,7 @@ server <- function(input, output, session) {
     if(!is.null(input$lat)){
       lat = input$lat
       lng = input$long
-      dist = 0.01
+      dist = 0.001
       
       leafletProxy("searchmap", 
                    data = data.frame(lat, lng)) |>

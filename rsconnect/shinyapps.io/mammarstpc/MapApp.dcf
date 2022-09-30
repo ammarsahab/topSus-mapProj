@@ -5,9 +5,9 @@ account: mammarstpc
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7158791
-bundleId: 6351430
+bundleId: 6354751
 url: https://mammarstpc.shinyapps.io/MapApp/
-when: 1664454840.83368
-lastSyncTime: 1664454840.83369
+when: 1664521103.05351
+lastSyncTime: 1664521103.05353
 asMultiple: FALSE
 asStatic: FALSE
