@@ -15,6 +15,11 @@ The ability to position the classrooms on a map would be very helpful for new st
 Moreover, the ability for students to input rooms that they have located to a public site, instead of only their classmates or friends, 
 would unlock a huge source of information on campus locations.
 
+## Purpose
+
+This application aims to make it easier for students to find locations or places to carry out lectures in an attractive way.
+In addition to providing the position of the place of study, this application also provides an overview or condition of the place of study, so that the information provided is more specific.
+
 ## How this app works
 
 Room data is stored in a view only Google Sheet.
@@ -55,6 +60,10 @@ Mahasiswa juga tak bisa mencari lokasi mereka relatif ke ruang kelas.
 Oleh karena itu, kemampuan memosisikan ruang kelas dalam peta dapat membantu mahasiswa melakukan navigasi di kampus.
 Selain itu, kemampuan mahasiswa memasukkan ruangan yang telah mereka temukan di suatu situs publik, bukan hanya ruang kelas atau teman,
 akan membuka sumber informasi yang signifikan mengenai lokasi kampus.
+
+## Tujuan
+Aplikasi ini bertujuan untuk memudahkan mahasiswa dalam mencari lokasi atau tempat melaksanakan kuliah secara luring.
+Selain memberikan posisi tempat perkuliahan, aplikasi ini juga memberikan gambaran atau kondisi tempat kuliah, sehingga informasi yang diberikan lebih spesifik.
 
 
 ## Cara Kerja
