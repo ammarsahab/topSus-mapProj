@@ -1,0 +1,70 @@
+library(shiny)
+
+ui <- fluidPage(
+  HTML('
+       <!doctype html>
+<html lang="en"> 
+   <head>
+      <meta charset="utf-8">
+      <title> Navigate IPB Dramaga </title>
+      <h1>Navigate IPB Dramaga</h1>
+	  <style type="text/css">
+	  body{background-color: #CF5C1C;}
+		form {
+			width:500px;
+			margin:50px auto;
+		}
+		.search {
+			padding:8px 15px;
+			background:rgba(50, 50, 50, 0.2);
+			border:0px solid #dbdbdb;
+		}
+		.button {
+			position:relative;
+			padding:6px 15px;
+			left:-8px;
+			border:2px solid #53bd84;
+			background-color:#53bd84;
+			color:#fafafa;
+		}
+		.button:hover  {
+			background-color:#fafafa;
+			color:#207cca;
+		}
+				  
+		::-webkit-input-placeholder { /* For WebKit browsers */
+			color:    #FFFFFF;
+						font-family:Helvetica Neue;
+						font-weight:bold;
+		}
+		:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+			color:    #FFFFFF;
+						font-family:Helvetica Neue;
+						font-weight:bold;
+		}
+		::-moz-placeholder { /* For Mozilla Firefox 19+ */
+			color:    #FFFFFF;
+						font-family:Helvetica Neue;
+						font-weight:bold;
+		}
+		:-ms-input-placeholder { /* For Internet Explorer 10+ */
+			color:    #FFFFFF;
+						font-family:Helvetica Neue;
+						font-weight:bold;
+		}	  
+	</style>
+   </head>
+<body>
+<form>
+    <input class="search" type="text" placeholder="RK X." required>
+    <input class="button" type="button" value="Cari">		
+</form>
+</body>
+</html> 
+       ')
+)
+
+server <- function(input, output){
+}
+
+shinyApp(ui, server)
